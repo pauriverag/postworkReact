@@ -2,8 +2,14 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
- 
+
 }
+ button:hover{
+     cursor: pointer;
+
+ }
+
+
 
 .cantidad{
     width: 40px;

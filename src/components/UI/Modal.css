@@ -1,0 +1,70 @@
+.modal {
+    position: fixed;
+    top: 30vh;
+    left: 10%;
+    width: 50%;
+    z-index: 100;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 20px;
+    transition: all 150ms ease-in-out;
+   
+  }
+
+  .actions button{
+      border-radius: 10px;
+      margin: .5rem .5rem;
+      height: 2rem;
+      width: 6rem;
+  }
+
+  .btn-cerrar{
+    color: rgb(63, 192, 96);
+    border: solid;
+    background-color: transparent;
+    border-color: rgb(63, 192, 96);
+  }
+  .btn-ordenar{
+    background-color: rgb(63, 192, 96);
+    border: transparent;
+    color: white;
+  }
+  
+  .header {
+    background-color: rgb(63, 192, 96);
+    padding: 0.5rem 1rem;
+
+  }
+  
+  .header h2 {
+    margin: 0;
+    color: #000;
+  }
+  
+  .content {
+    padding: 1rem;
+  }
+  
+  .actions {
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.80);
+    transition: all 150ms ease-in-out;
+  }
+  
+  @media (min-width: 768px) {
+    .modal {
+      left: calc(50% - 20rem);
+      width: 40rem;
+    }
+  }

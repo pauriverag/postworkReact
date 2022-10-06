@@ -5,11 +5,11 @@ function AddMeal(props){
         event.preventDefault();
         props.onAddCart(cantidad);
 
-        setCantidad("")
+        setCantidad("1")
     }
 
   
-    const [cantidad, setCantidad] = useState(0);
+    const [cantidad, setCantidad] = useState();
 
     const amountChangeHandler = (event) => {
         setCantidad (event.target.value);
@@ -22,9 +22,9 @@ function AddMeal(props){
             <form onSubmit={submitHandler}>
                 <div className="add-meal">
                 <label> Cantidad</label>
-                <input name="cantidad" onChange={amountChangeHandler} className="cantidad" type="number"/>
+                <input defaultValue={1} value={cantidad} onChange={amountChangeHandler} className="cantidad" type="number"/>
                 </div>
-                <button  className="button" type="submit"> Agregar</button>
+                <button className="button" type="submit"> Agregar</button>
             </form>
         </div>
     )

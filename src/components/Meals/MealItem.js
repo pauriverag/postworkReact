@@ -8,8 +8,8 @@ function MealItem (props){
                 <h3>{props.name}</h3>
                 <p>{props.description}</p>
                 <div className="add-cart">
-                <p className="precio">${props.price}</p>
-                <AddMeal onAddCart= {props.onAddCart}/>
+                    <p className="precio">${props.price}</p>
+                    <AddMeal onAddCart= {props.onAddCart}/>
                 </div>
                
             </div> 
